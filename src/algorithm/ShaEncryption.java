@@ -2,6 +2,7 @@ package algorithm;
 
 import java.security.MessageDigest;
 import java.util.HashMap;
+import java.util.Hashtable;
 
 public class ShaEncryption {
 	private static final char[] HEX_ARRAY = "0123456789ABCDEF".toCharArray();
@@ -28,7 +29,7 @@ public class ShaEncryption {
 	
 	
 	
-	public static String sha256Decription(String code, HashMap<String, String> codeTable) {
+	public static String sha256Decription(String code, Hashtable<String, String> codeTable) {
 		if(codeTable.containsKey(code)) {
 			return codeTable.get(code);
 		}
