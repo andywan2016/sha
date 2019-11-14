@@ -2,6 +2,7 @@ package rpc;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Hashtable;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,7 +21,7 @@ import algorithm.ShaEncryption;
 @WebServlet("/messages/*")
 public class messages extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	public HashMap<String, String> codeTable = new HashMap<String, String>();
+	public Hashtable<String, String> codeTable = new Hashtable<String, String>();
 
 	/**
 	 * @see HttpServlet#HttpServlet()
