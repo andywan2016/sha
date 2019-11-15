@@ -31,6 +31,6 @@ The end point of the test will be [http://localhost:8080/sha](http://localhost:8
 
 
 ## Analysis
-This is single node service. The overwhelmed volume of requests could possibly lead  to server crush. As there is no file or database system, the code-messages pair table can't even be restored after restart of server.<br>
+This is single node service. The overwhelmed volume of requests could possibly lead  to server crash. As there is no file or database system, the code-messages pair table can't even be restored after restart of server.<br>
 
 To solve the problem and scale up the system, we can add more nodes to process the requests. For example, we may apply 26 machines to handle requests from 'a\*' to 'z\*' respectively. We also want to make this service stateless for concurrency safety.
