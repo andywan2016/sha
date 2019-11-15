@@ -21,7 +21,7 @@ import algorithm.ShaEncryption;
 @WebServlet("/messages/*")
 public class messages extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	public Hashtable<String, String> codeTable = new Hashtable<String, String>();
+	public static Hashtable<String, String> codeTable = new Hashtable<String, String>();
 
 	/**
 	 * @see HttpServlet#HttpServlet()
@@ -71,7 +71,7 @@ public class messages extends HttpServlet {
 			}
 
 			response.setStatus(HttpServletResponse.SC_NOT_FOUND);
-			//response.sendError(HttpServletResponse.SC_NOT_FOUND);
+			//response.sendError(HttpServletResponse.SC_NOT_FOUND,jsonString);
 			RpcHelper.writeJsonObject(response, respObj);
 			
 			//response.getWriter().append("Served at: ").append(code);
