@@ -17,7 +17,7 @@ $ curl -X POST -H "Content-Type: application/json" -d '{"message": "foo"}' http:
 For GET method:
 
 ```sh
-$ curl http://18.219.67.89/sha/messages/2c26b46b68ffc68ff99b453c1d30413413422d706483bfa0f9 8a5e886266e7ae
+$ curl -I http://18.219.67.89/sha/messages/2c26b46b68ffc68ff99b453c1d30413413422d706483bfa0f9
 ```
 
 
