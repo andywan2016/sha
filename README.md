@@ -11,13 +11,13 @@ The service(named "sha") is deployed on GCP. The IP address for vm instance is [
 To test message function, for POST method, user can use following sh script:  
 
 ```sh
-$ curl -X POST -H "Content-Type: application/json" -d '{"message": "foo"}' http://18.219.67.89/sha/messages
+$ curl -X POST -H "Content-Type: application/json" -d '{"message": "foo"}' https://http://35.184.150.97/sha/messages
 ```
 
 For GET method:
 
 ```sh
-$ curl -I http://18.219.67.89/sha/messages/2c26b46b68ffc68ff99b453c1d30413413422d706483bfa0f9http://35.184.150.97/
+$ curl -I http://35.184.150.97/sha/messages/2c26b46b68ffc68ff99b453c1d30413413422d706483bfa0f9
 ```
 
 
