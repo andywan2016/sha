@@ -5,7 +5,7 @@ This project is for first problem.Implemented both POST and GET methods.<br>
 Apache Tomcat 9.0 is used in this project as server.
 
 ## Online Test
-The service(named "sha") is deployed on AWS ec2. The IP address for ec2 instance is [18.219.67.89](http://18.219.67.89). The sha service is in [18.219.67.89/sha](http://18.219.67.89/sha)
+The service(named "sha") is deployed on GCP. The IP address for vm instance is [http://35.184.150.97](http://35.184.150.97). The sha service is in [http://35.184.150.97/sha](http://http://35.184.150.97/sha)
 <br>
 
 To test message function, for POST method, user can use following sh script:  
@@ -17,7 +17,7 @@ $ curl -X POST -H "Content-Type: application/json" -d '{"message": "foo"}' http:
 For GET method:
 
 ```sh
-$ curl -I http://18.219.67.89/sha/messages/2c26b46b68ffc68ff99b453c1d30413413422d706483bfa0f9
+$ curl -I http://18.219.67.89/sha/messages/2c26b46b68ffc68ff99b453c1d30413413422d706483bfa0f9http://35.184.150.97/
 ```
 
 
